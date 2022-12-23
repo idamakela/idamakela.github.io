@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JavaScript Web Game - Hanged Man</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery-3.6.2.min.js"></script>
+        <script src="../js/app.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Responsive Web Game</h1>
+        </header>
+
+        <main>
+            <div class="start-game">
+                <div>
+                    <h2 class="start-title">This is a game of Hanged Man</h2>
+                    <p>You play this game by selecting the letters you think belong in the word.</p>
+                    <p>To start the game, press the button!</p>
+                </div>
+                <button id="start-button"><p>START</p></button>
+            </div>
+
+            <div class="parent-container">
+                <div class="score container"></div>
+                <div class="progress container"></div>
+            </div>
+
+            <div class="answer"></div>
+
+            <div class="container-keyboard">
+                <div class="keyboard"></div>
+            </div>
+
+            <div class="cancel-restart">
+                <button id="cancel-button"><p>CANCEL</p></button>
+                <button id="restart-button"><p>RESTART</p></button>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Ida Mäkelä</p>
+        </footer>
+    </body>
+</html>
