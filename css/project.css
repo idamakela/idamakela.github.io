@@ -1,0 +1,131 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: var(--indent-base) 0;
+}
+
+.wrapper {
+    padding: var(--indent-base);
+    width: 100%;
+    z-index: 0;
+}
+
+.carousel .card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: var(--text-color-light);
+    border-radius: var(--second-radius);
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 90px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+    min-height: 4em;
+    padding: var(--indent-base);
+}
+
+.card .title {
+    text-align: center;
+}
+
+.owl-dots {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.owl-dot {
+    border-radius: 25px;
+    border: 2px solid var(--accent-color)!important;
+    cursor: pointer;
+    height: 1em;
+    margin: 0 5px;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 2em;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background-color: var(--accent-color)!important;
+    -webkit-box-shadow: 0px 4px 15px var(--light-accent-color);
+            box-shadow: 0px 4px 15px var(--light-accent-color);
+
+}
+
+.img-container {
+    margin: var(--indent-base);
+}
+
+img {
+    border-radius: var(--base-radius);
+    -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.card .title,
+.card .date {
+    text-transform: capitalize;
+}
+
+.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: var(--indent-base);
+}
+
+.links .demo,
+.links .github {
+    background-color: var(--secondary-color);
+    border-radius: var(--base-radius);
+    color: var(--text-color-light);
+    padding: var(--indent-secondary);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.links .demo:hover,
+.links .github:hover {
+    background-color: var(--accent-color);
+}
+
+@media screen and (min-width:991px) {
+    .carousel .card {
+        max-height: 100%;
+    }
+
+    .img-container {
+        margin-top: calc(var(--indent-base) * 2);
+    }
+}

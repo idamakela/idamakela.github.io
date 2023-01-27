@@ -1,0 +1,12 @@
+[submodule "projects/four-api"]
+	path = projects/four-api
+	url = git@github.com:idamakela/four-api.git
+[submodule "projects/two-jsGame"]
+	path = projects/two-jsGame
+	url = git@github.com:idamakela/two-jsGame.git
+[submodule "projects/one-webpage"]
+	path = projects/one-webpage
+	url = git@github.com:idamakela/one-webpage.git
+[submodule "projects/three-responsiveWebGame"]
+	path = projects/three-responsiveWebGame
+	url = git@github.com:idamakela/three-responsiveWebGame.git

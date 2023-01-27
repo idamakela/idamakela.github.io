@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "latoregular";
+    src: url("../typography/Lato/Regular/lato-regular-webfont.woff2") format("woff2"),
+         url("../typography/Lato/Regular/lato-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "latosemibold";
+    src: url("../typography/Lato/SemiBold/lato-semibold-webfont.woff2") format("woff2"),
+         url("../typography/Lato/SemiBold/lato-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "josefin_sanssemibold";
+    src: url("../typography/Josefin_Sans/SemiBold/josefinsans-semibold-webfont.woff2") format("woff2"),
+         url("../typography/Josefin_Sans/SemiBold/josefinsans-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

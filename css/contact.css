@@ -1,0 +1,69 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+form,
+.box-text {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: var(--indent-base);
+    max-width: 550px;
+    width: 100%;
+}
+
+form input,
+textarea {
+    background-color: var(--text-color-light);
+    border-radius: var(--base-radius);
+    border: none;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: var(--indent-base);
+    padding: var(--indent-secondary);
+}
+
+form textarea {
+    min-height: 7.5rem;
+    resize: vertical;
+}
+
+form label {
+    color: var(--secondary-color);
+    margin: 0 0 var(--indent-secondary) var(--indent-secondary);
+}
+
+@media screen and (min-width:991px) {
+
+    form,
+    .box-text {
+        -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+            align-self: stretch;
+    }
+
+    main {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+    }
+
+    .box-text {
+        max-height: 73%;
+    }
+}

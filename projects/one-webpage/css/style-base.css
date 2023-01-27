@@ -1,0 +1,230 @@
+:root {
+    --main-color: #FFFFFF;
+    --secondary-color: #00A878;
+    --accent-color: #F3C178;
+    --light-secondary-color: #00a8784e;
+    --light-accent-color: #f3c27885;
+    --text-color: #0B0500;
+
+    --indent-base: 2.4rem;
+    --indent-secondary: 1.4rem;
+    --button-base-top: 0.8rem;
+    --button-base-sides: 1.6rem;
+    --base-radius: 1.3rem;
+    --second-radius: 2.5rem;
+
+    font-size: 10px;
+    --body-font: 'Nunito', sans-serif;
+    --title-font: 'Quicksand', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    padding: var(--indent-base);
+}
+
+main {
+    background-color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: var(--indent-base);
+}
+
+.page-indicator {
+    align-items: center;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    min-height: 20%;
+}
+
+.box-1 {
+    background-color: var(--light-secondary-color);
+    border-radius: var(--second-radius);
+    border: 1rem solid var(--secondary-color);
+    margin: var(--indent-secondary) 0;
+    padding: var(--indent-base);
+}
+
+.box-2 {
+    background-color: var(--light-accent-color);
+    border-radius: var(--second-radius);
+    border: 10px solid var(--accent-color);
+    margin: var(--indent-secondary) 0;
+    padding: var(--indent-base);
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin: 1rem 5rem 1rem 0;
+}
+
+h2 {
+    color: var(--main-color);
+    font-family: var(--title-font);
+    font-size: 3.6rem;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: var(--title-font);
+    font-size: 2rem;
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: var(--indent-secondary) 0 0 var(--indent-secondary);
+}
+
+p.bold {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-top: var(--indent-secondary);
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar label {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+#toggler {
+    display: none;
+}
+
+#toggler:checked ~ .menu {
+    max-height: 100%;
+}
+
+.construction {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--title-font);
+    font-size: 3.6rem;
+    gap: 2.4rem;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 2.0rem;
+    margin: 1rem 5rem 1rem 0;
+}
+
+footer span {
+    display: none;
+    margin-right: 0.6rem;
+}
+
+.nav-item,
+.footer-item a {
+    border-radius: 1.3rem;
+    box-sizing: border-box;
+    padding: var(--button-base-top) var(--button-base-sides);
+    transition: 0.5s;
+}
+
+.nav-item:hover,
+.footer-item a:hover {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.nav-item .active {
+    text-decoration: underline var(--main-color);
+    
+}
+
+@media screen and (min-width:600px) {
+    
+    .menu {
+        max-height: 100%;
+        width: auto;
+    }
+
+    .menu-links {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #toggler,
+    .navbar label {
+        display: none;
+    } 
+
+    footer span {
+        display: inline-flex;
+        margin-right: 0.6rem;
+    }
+}

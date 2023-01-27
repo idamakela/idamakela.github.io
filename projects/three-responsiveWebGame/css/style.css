@@ -1,0 +1,248 @@
+:root {
+    --main-color: #FFFFFF;
+    --secondary-color: #355070;
+    --accent-color: #E56B6F;
+
+    --title-font: Verdana, Geneva, Tahoma, sans-serif;
+    --body-font: 'Courier New', Courier, monospace;  
+
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header,
+footer {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 4%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 1.953rem;
+    margin: 4%;
+}
+
+h2 {
+    font-family: var(--body-font);
+    font-size: 1.563rem;
+    padding-bottom: 8%;
+}
+
+h3 {
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    padding: 5%;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #5f7590b0;
+    color: var(--main-color);
+}
+
+.cancel-restart button,
+#start-button {
+    align-self: center;
+    background-color: var(--accent-color);
+    border-radius: 1em;
+    margin: 6%;
+}
+
+.start-game {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+.start-game div h2,
+.start-game div p {
+    margin: 4%;
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    border: 4px var(--secondary-color) dashed;
+    margin: 4%;
+    padding: 4%;
+    text-align: center;
+}
+
+.progress {
+    min-height: 162px;
+}
+
+.answer {
+    font-family: var(--body-font);
+    font-size: 1.953rem;
+    font-weight: 600;
+    min-height: 38px;
+    padding: 8%;
+    text-align: center;
+}
+
+.container-keyboard {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4% 0 0 0;
+    max-width: 620px;
+}
+
+.keyboard button {
+    align-items: center;
+    background-color: #6699CC;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin: 0.5%;
+    min-height: 54px;
+    min-width: 48px;
+}
+
+.keyboard button:hover,
+.keyboard button:disabled {
+    background-color: #6699cc5c;
+}
+
+.cancel-restart {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2.441rem;
+        margin: 2%;
+    }
+    
+    h2 {
+        font-size: 1.953rem;
+        padding-bottom: 4%;
+    }
+    
+    h3 {
+        font-size: 1.563rem;
+    }
+    
+    p {
+        font-size: 1.25rem;
+    }
+
+    .parent-container {
+        align-items: center;
+    }
+
+    .container {
+        min-width: 450px;
+        margin: 2%;
+    }
+
+    .progress {
+        min-height: 188px;
+    }
+
+    .answer {
+        padding: 3%;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    footer {
+        padding: 2%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .start-game {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .parent-container {
+        align-items: center;
+        display: flex;
+    }
+
+    .score {
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .progress {
+        min-height: 189px;
+        padding: 2%;
+    }
+
+    .answer {
+        padding: 2%;
+    }
+
+    .keyboard {
+        max-width: 880px;
+
+    }
+
+    .keyboard button {
+        font-size: 1.25rem;
+        max-height: 54px;
+        max-width: 48px;
+    }
+
+    .cancel-restart button,
+    #start-button {
+        padding: 2%;
+    }
+
+    .cancel-restart button {
+        margin: 4%;
+    }
+}

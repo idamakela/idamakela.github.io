@@ -1,0 +1,107 @@
+:root {
+    --main-color: #FFFFFF;
+    --second-color: #C73032;
+    --accent-color: #264C5E;
+    --light-accent-color: #bbc8cf;
+
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    height: 100%;
+}
+
+header {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    font-size: 2.488rem;
+    padding: 8%;
+    text-align: center;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.search-field {
+    font-size: 1.2rem;
+    margin: 4%;
+}
+
+.search-field option,
+.search-field select {
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+button {
+    background-color: var(--light-accent-color);
+    border-radius: 4rem;
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 1.728rem;
+    margin: 8%;
+    padding: 1em 2em 1em 2em;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.spell-result {
+    margin: 6% 4% 0 4%;
+    max-width: 558px;
+}
+
+.spell-result p {
+    margin: 1% 1% 1% 0;
+}
+
+.box {
+    margin: 4% 0 4% 0;
+}
+
+footer {
+    background-color: var(--light-accent-color);
+    font-size: 1.2rem;
+    padding: 4%;
+}
+
+@media screen and (min-width: 991px) {
+    header {
+        padding: 4%;
+    }
+
+    .spell-result {
+        margin: 4% 4% 0% 4%;
+    }
+    
+    .box {
+        margin: 2% 0 2% 0;
+    }
+
+    footer {
+        padding: 2%;
+    }
+}

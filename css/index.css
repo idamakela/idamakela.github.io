@@ -1,0 +1,45 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 80vh;
+}
+
+.landing {
+    background-color: var(--text-color-light);
+    border: none;
+    border-radius: var(--second-radius);
+    color: var(--text-color);
+    padding: 8%;
+    z-index: 0;
+}
+
+.landing p {
+    padding: var(--indent-base) 0 0 var(--indent-base);
+    font-size: 1.563rem;
+}
+
+.landing a {
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.landing a:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (min-width:991px) {
+    .landing p {
+        font-size: 1.953rem;
+    }
+}

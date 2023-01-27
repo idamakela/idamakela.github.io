@@ -1,0 +1,66 @@
+form,
+.box-1 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: var(--indent-base);
+    width: 100%;
+}
+
+form input,
+textarea {
+    background-color: var(--main-color);
+    border-radius: var(--base-radius);
+    border: 0.2rem solid var(--accent-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: var(--indent-base);
+    padding: var(--indent-secondary);
+}
+
+form textarea {
+    margin-bottom: 0;
+    min-height: 7.5rem;
+    resize: vertical;
+}
+
+form label {
+    color: var(--text-color);
+    font-family: var(--title-font);
+    font-size: 2rem;
+    margin: 0 0 var(--indent-secondary) var(--indent-secondary);
+}
+
+button {
+    align-self: center;
+    background-color: var(--secondary-color);
+    border-radius: var(--base-radius);
+    border: none;
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-top: var(--indent-base);
+    padding: var(--button-base-top) var(--button-base-sides);
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) {
+
+    form,
+    .box-1 {
+        max-width: 46rem;
+    }
+
+    .box-1 h3 {
+        font-size: 2.4rem;
+    }
+
+    .box-1 p {
+        font-size: 1.8rem;
+    }
+}
